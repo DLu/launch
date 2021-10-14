@@ -1008,7 +1008,8 @@ class ExecuteProcess(Action):
         :raises RuntimeError: if cached_output is false.
         """
         if not self.__cached_output:
-            raise RuntimeError(f"cached output must be true to be able to get stdout, proc '{self.__name}'")
+            raise RuntimeError(
+                f"cached output must be true to be able to get stdout, proc '{self.__name}'")
         return self.__stdout_buffer.getvalue()
 
     def get_stderr(self):
@@ -1018,12 +1019,13 @@ class ExecuteProcess(Action):
         :raises RuntimeError: if cached_output is false.
         """
         if not self.__cached_output:
-            raise RuntimeError(f"cached output must be true to be able to get stderr, proc '{self.__name}'")
+            raise RuntimeError(
+                f"cached output must be true to be able to get stderr, proc '{self.__name}'")
         return self.__stderr_buffer.getvalue()
 
     @property
     def return_code(self):
-        """Gets the process return code, None if it hasn't finished."""
+        """Get the process return code, None if it hasn't finished."""
         if self._subprocess_transport is None:
             return None
         return self._subprocess_transport.get_returncode()
