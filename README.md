@@ -5,4 +5,4 @@
  * [Contribution Guide](CONTRIBUTING.md)
  * [Conceptual Documentation](https://docs.ros.org/en/rolling/Concepts/Basic/About-Launch.html)
  * [Tutorials](https://docs.ros.org/en/rolling/Tutorials/Intermediate/Launch/Launch-Main.html)
- * [Sphinx Documentation](https://docs.ros.org/en/rolling/p/launch/architecture.html)
+ * [Package Documentation](https://docs.ros.org/en/rolling/p/launch/)
